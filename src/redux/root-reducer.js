@@ -1,13 +1,13 @@
 //libs
 import { combineReducers } from 'redux';
 //reducers slice
-
+import todolistReducer from './todolist/todolist.reducer';
 
 
 
 
 const appReducer = combineReducers({
-    todolist: () => ({ dummy: 1 })
+    todolist: todolistReducer
 });
 
 

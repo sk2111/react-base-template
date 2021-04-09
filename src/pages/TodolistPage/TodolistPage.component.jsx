@@ -1,11 +1,14 @@
 //libs
 import React from 'react';
-
+//components
+import AddTodoList from '../../components/AddTodoList/AddTodoList.component';
 
 
 const TodolistPage = () => {
     return (
-        <div>Hai I am todolist page</div>
+        <div>
+            <AddTodoList />
+        </div>
     );
 };
 
