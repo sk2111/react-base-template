@@ -7,7 +7,7 @@ import { combineReducers } from 'redux';
 
 
 const appReducer = combineReducers({
-    todolist: {}
+    todolist: () => ({ dummy: 1 })
 });
 
 
