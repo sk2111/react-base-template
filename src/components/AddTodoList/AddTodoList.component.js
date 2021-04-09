@@ -9,7 +9,7 @@ const AddTodoList = ({ addTodoListItem }) => {
     const [todoItem, setTodoItem] = useState('');
 
     const addTodoItem = () => {
-        addTodoListItem(todoItem);;
+        addTodoListItem(todoItem);
         setTodoItem('');
     };
 
@@ -22,14 +22,10 @@ const AddTodoList = ({ addTodoListItem }) => {
 };
 
 
-const mapStateToProps = () => {
-
-};
-
 const mapDispatchToProps = (dispatch) => {
     return {
         addTodoListItem: (item) => dispatch(addTodoListItem(item))
     }
-}
+};
 
 export default connect(null, mapDispatchToProps)(AddTodoList);
