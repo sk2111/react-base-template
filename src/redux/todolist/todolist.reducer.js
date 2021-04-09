@@ -4,7 +4,7 @@ import produce from "immer";
 
 const INTITIAL_STATE = {
     items: [],
-    deleteCount: 0
+    deletedCount: 0
 };
 
 const todolistReducer = produce((draft, action) => {
