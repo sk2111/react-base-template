@@ -1,17 +1,27 @@
-1) Folder naming convention used ?
-2) 
+[19:41] Sathishkumar Thangavel
+    
+
+1) Folder naming convention used ? (normal folder have small case components folder can have Caps starting)
+1) Use Router and history , connected Router (explore)
+2) Create component (subfolder specific for child components which may not reusable)
+3) Have seperate folder under components reusable (generic components) , (Container pattern folder )
+4) Have a root level action.js file which exports all the actions 
+5) useDispatch and useSelect instead of connect
+6) Organzise import into libs,compo,action,reselct,constats at the top level of import 
+7) Have a constant proptype file (helpful for identifying bug earlier) prop-type library explore
+8) Client server folder structure ? 
+   => Have server Folder code parallel to src ( ) 
+   => HTTP vs Web sockets => Need basics use 
+
+
+8.1) useMemo and other memoization hooks for function components
+8.2) Custom Hooks possiblity  
+9) Give a try to Electron (if possible)
 
 
 
 
+Pending
 
 
-
-/* 
-    POints to Note
-
-    BroswerRouter uses its own history so when we need to do programmatic navigation from 
-    redux thunk or saga it will be difficult to do
-
-    Alternate is to use Route with custom history made (But for this App its Not necessary)
-*/
+1) Websockets best practices  and guidelines needed input
