@@ -1,0 +1,17 @@
+1) Folder naming convention used ?
+2) 
+
+
+
+
+
+
+
+/* 
+    POints to Note
+
+    BroswerRouter uses its own history so when we need to do programmatic navigation from 
+    redux thunk or saga it will be difficult to do
+
+    Alternate is to use Route with custom history made (But for this App its Not necessary)
+*/
