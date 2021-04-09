@@ -1,14 +1,14 @@
 import { todolistActionTypes } from './todolist.type'
 
 const INTITIAL_STATE = {
-    todoList: []
+    items: ['Hello hai']
 };
 
 const todolistReducer = (state = INTITIAL_STATE, action) => {
 
     switch (action.type) {
         case todolistActionTypes.ADD_TODOLIST_ITEM:
-            return { hai: '123' };
+            return state;
         default:
             return state;
     }
