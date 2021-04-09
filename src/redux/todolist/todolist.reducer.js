@@ -1,18 +1,20 @@
 import { todolistActionTypes } from './todolist.type'
+import produce from "immer";
+
 
 const INTITIAL_STATE = {
-    items: ['Hello hai']
+    items: ['Item 1']
 };
 
-const todolistReducer = (state = INTITIAL_STATE, action) => {
-
+const todolistReducer = produce((draft, action) => {
     switch (action.type) {
         case todolistActionTypes.ADD_TODOLIST_ITEM:
-            return state;
+            draft.items.push(action.payload);
+            break;
         default:
-            return state;
+            break;
     }
-}
+}, INTITIAL_STATE);
 
 
 export default todolistReducer;

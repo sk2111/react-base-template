@@ -9,6 +9,7 @@ const AddTodoList = ({ addTodoListItem }) => {
     const [todoItem, setTodoItem] = useState('');
 
     const addTodoItem = () => {
+        if (!todoItem) return;
         addTodoListItem(todoItem);
         setTodoItem('');
     };
