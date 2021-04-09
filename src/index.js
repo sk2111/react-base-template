@@ -1,10 +1,19 @@
+//libs
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'redux';
+import { store } from "./redux/store";
 import App from './pages/App/App.component';
+
+// We can include global css styles here like color variable and others
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
