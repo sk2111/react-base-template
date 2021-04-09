@@ -35,7 +35,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         deleteTodoListItem: (item) => dispatch(deleteTodoListItem(item)),
         completeTodoListItem: (item) => dispatch(completeTodoListItem(item)),
-    }
+    };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(PreviewTodoList);

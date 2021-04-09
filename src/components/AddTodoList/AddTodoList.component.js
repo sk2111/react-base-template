@@ -26,7 +26,7 @@ const AddTodoList = ({ addTodoListItem }) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         addTodoListItem: (item) => dispatch(addTodoListItem(item))
-    }
+    };
 };
 
 export default connect(null, mapDispatchToProps)(AddTodoList);
