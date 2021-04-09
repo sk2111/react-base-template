@@ -14,7 +14,7 @@ const todolistReducer = produce((draft, action) => {
             break;
         case todolistActionTypes.DELETE_TODOLIST_ITEM:
             draft.items = draft.items.filter((item) => item !== action.payload);
-            draft.deleteCount++;
+            draft.deletedCount++;
             break;
         case todolistActionTypes.COMPLETE_TODOLIST_ITEM:
             const index = draft.items.findIndex((item) => item === action.payload);
