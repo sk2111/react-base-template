@@ -1,5 +1,5 @@
-import { todolistActionTypes } from './todolist.type'
 import produce from "immer";
+import { todolistActionTypes } from './todolist.type'
 
 
 const INTITIAL_STATE = {
